@@ -211,6 +211,10 @@ var deleteTask = function(taskId) {
 
 };
 
+var savedTasks = function() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+};
+
 // Create a new task
 formEl.addEventListener("submit", taskFormHandler);
 
